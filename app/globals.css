@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #f6f4ef;
+  --ink: #1e252e;
+  --muted: #4f5a67;
+  --line: #c9d2dc;
+  --accent: #2f587f;
+  --accent-soft: #d8e3ef;
+  --panel: #fbfaf7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--canvas);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
