@@ -23,8 +23,10 @@ npm run lint
 npm run build
 ```
 
-## Deploy (Vercel)
+## Deploy (GitHub Pages)
 
-1. Import this repository in Vercel.
-2. Add environment variables from `.env.example`.
-3. Use default Next.js build settings.
+1. Set repository visibility to public.
+2. In GitHub Settings > Pages, set Source to GitHub Actions.
+3. Add repo variable `NEXT_PUBLIC_FORM_ENDPOINT` (or set it as a secret).
+4. Push to `main` and wait for the `deploy-pages` workflow.
+5. Visit `https://philogynic.github.io/bimo-landing/`.

@@ -12,7 +12,9 @@ export function TestimonialsSection({ items }: TestimonialsSectionProps) {
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <Card key={`${item.author}-${item.role}`}>
-            <blockquote className="text-sm leading-relaxed text-ink">"{item.quote}"</blockquote>
+            <blockquote className="text-sm leading-relaxed text-ink">
+              &ldquo;{item.quote}&rdquo;
+            </blockquote>
             <p className="mt-5 text-sm font-semibold text-ink">{item.author}</p>
             <p className="text-xs text-muted">
               {item.role}

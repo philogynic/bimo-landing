@@ -1,22 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
 
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap"
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap"
-});
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://philogynic.github.io/bimo-landing";
 const title = "Bimo Chandra | Frontend Engineer";
 const description =
   "Portfolio landing page for Bimo Chandra: frontend engineering, product-focused web development, and collaboration inquiries.";
@@ -57,7 +45,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en">
       <body className="bg-canvas font-sans text-ink antialiased">{children}</body>
     </html>
   );

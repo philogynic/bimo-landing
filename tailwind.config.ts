@@ -18,8 +18,8 @@ const config: Config = {
         panel: "var(--panel)"
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
-        serif: ["var(--font-playfair)", "ui-serif", "Georgia"]
+        sans: ["Avenir Next", "Avenir", "Segoe UI", "ui-sans-serif", "system-ui"],
+        serif: ["Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Georgia", "ui-serif"]
       },
       keyframes: {
         "fade-up": {
